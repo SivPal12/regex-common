@@ -35,7 +35,7 @@
             <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
             <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
           </flowInitContext>
-          <scmCommentPrefix>[jgitflow] </scmCommentPrefix>
+          <scmCommentPrefix xml:space="preserve">[jgitflow] </scmCommentPrefix>
           <noDeploy>true</noDeploy>
         </configuration>
       </plugin>
