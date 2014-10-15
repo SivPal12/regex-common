@@ -11,3 +11,5 @@ Changelog:
   * Added readme
   * Updated version of maven-compiler-plugin
   * pom.xml cleanup
+ * 0.1.3
+  * pom.xml - Preserving whitespace
