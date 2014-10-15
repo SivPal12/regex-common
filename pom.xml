@@ -35,14 +35,14 @@
             <hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
             <versionTagPrefix>${project.artifactId}-</versionTagPrefix>
           </flowInitContext>
-          <scmCommentPrefix>[jgitflow] </scmCommentPrefix>
+          <scmCommentPrefix>[jgitflow]&#160;</scmCommentPrefix>
           <noDeploy>true</noDeploy>
         </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
+        <version>3.2</version>
         <configuration>
           <source>${compiler.version}</source>
           <target>${compiler.version}</target>
