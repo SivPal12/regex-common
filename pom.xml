@@ -7,6 +7,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>regex-common</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <compiler.version>1.7</compiler.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,6 +20,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -32,6 +38,15 @@
           </flowInitContext>
           <scmCommentPrefix>[jgitflow] </scmCommentPrefix>
           <noDeploy>true</noDeploy>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>${compiler.version}</source>
+          <target>${compiler.version}</target>
         </configuration>
       </plugin>
     </plugins>
